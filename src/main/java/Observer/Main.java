@@ -1,4 +1,8 @@
 package Observer;
+
+import Observer.classes.Channel;
+import Observer.classes.Subscriber;
+
 /**
  * Here is a simple example of the observer design pattern.
  * We can create here multiple channels like on YouTube
@@ -19,17 +23,39 @@ public class Main {
 
         Channel atom = new Channel();
         Channel programming = new Channel();
-
+        Channel music = new Channel();
 
         s3.addChannel(atom);
         s4.addChannel(atom);
         s3.addChannel(programming);
         s1.addChannel(programming);
+        s3.addChannel(music);
+        s5.addChannel(music);
+        s2.addChannel(music);
+
+        s3.unSubTheChannel(music);
 
 
 
+        /**
+         * Atom channel
+         */
+        System.out.println("\nAtom channel");
+        System.out.println();
         atom.uploadTitle("Sexy Frogs");
+        /**
+         * Programming channel
+         */
+
+        System.out.println("\nProgramming channel");
+        System.out.println();
         programming.uploadTitle("How to programming in Java");
+        /**
+         * Muscic Channel
+         */
+        System.out.println("\nMuscic Channel");
+        System.out.println();
+        music.uploadTitle("Led Zeppelin");
 
 
     }
