@@ -1,5 +1,7 @@
-package Observer;
+package Observer.classes;
 
+
+import Observer.interfaces.Observer;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,9 +24,15 @@ public class Subscriber implements Observer {
         channels.add(channel);
     }
 
+
     @Override
     public void update(Channel channel) {
         System.out.println("Hello " + name + " the video " + channel.getMovie() +  " is uploaded on channel ");
+    }
+
+    @Override
+    public void unSubTheChannel(Channel channel) {
+        channel.unSub(this);
     }
 
 }
