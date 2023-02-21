@@ -7,3 +7,4 @@ EVERY DESIGN PATTERN HAS TWO EXAMPLES OF IMPLEMENTATION IN CODE
 -------------------------------------------------------------------------
 1. Observer
 2. Decorator
+3. Singleton
