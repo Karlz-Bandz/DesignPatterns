@@ -9,3 +9,4 @@ EVERY DESIGN PATTERN HAS TWO EXAMPLES OF IMPLEMENTATION IN CODE
 2. Decorator
 3. Singleton
 4. Builder
+5. Factory
